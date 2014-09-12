@@ -1,4 +1,5 @@
 #!usr/bin/env python
+# -*- coding: UTF-8 -*-
 __author__ = 'cocoon'
 
 import time
@@ -88,7 +89,7 @@ def test_http_api_low_level():
 
         c.select(alice,  action='wait.exists', resourceId=dialog_id )
         # print message main menu
-        print c.select(alice,resourceId=dialog_id , action = 'text')
+        print c.select(alice,resourceId=dialog_id , action = 'text').encode('utf-8')
 
 
         # select 1 :detail suivi conso
@@ -99,7 +100,7 @@ def test_http_api_low_level():
 
 
         # print message conso appel
-        print c.select(alice,action='text',resourceId=dialog_id)
+        print c.select(alice,action='text',resourceId=dialog_id).encode('utf-8')
 
 
         time.sleep(5)
