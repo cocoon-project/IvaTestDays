@@ -13,7 +13,7 @@ RUN pip install git+https://bitbucket.org/cocoon_bitbucket/pyjenkins.git
 
 
 VOLUME /tests
-VOLUME /jenkins
+#VOLUME /jenkins
 
 
 ADD ./demo /tests/
