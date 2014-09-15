@@ -34,7 +34,7 @@ pybot keyword_driven.txt
 
 
 cd /tests
-rflauch -j /tests/robotdemo/jobs.yaml keyword_driven
+rflaunch -j /tests/robotdemo/jobs.yaml keyword_driven
 
 
 ```

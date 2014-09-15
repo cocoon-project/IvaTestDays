@@ -11,6 +11,10 @@ RUN pip install -r /opt/iva/requirements.txt
 RUN pip install PyYAML
 RUN pip install git+https://bitbucket.org/cocoon_bitbucket/pyjenkins.git
 
+
+VOLUME [ '/tests' , '/jenkins' ]
+
+
 ADD ./demo /tests/
 WORKDIR /tests
 
