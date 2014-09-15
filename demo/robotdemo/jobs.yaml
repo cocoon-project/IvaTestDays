@@ -1,0 +1,20 @@
+jenkins:
+  config:
+      base: "/tests"
+      collection: robotdemo
+      passThreshold: 10.0
+      unstableThreshold: 50.0
+  jobs:
+      keyword_driven:
+          name: keyword_driven.txt
+          description: "calculator test"
+          parameters:
+            - --loglevel debug
+
+      gherkin:
+        name: gherkin.txt
+        description: "gherkin"
+        parameters:
+          - --exclude not_ready
+          - --loglevel debug
+          - --dryrun

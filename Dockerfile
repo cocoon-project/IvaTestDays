@@ -3,11 +3,15 @@ FROM cocoon/droydrunner
 RUN mkdir /opt/iva
 WORKDIR /opt/iva
 
+# install dependencies (robotframework ... )
 ADD requirements.txt /opt/iva/
 RUN pip install -r /opt/iva/requirements.txt
 
-ADD ./demo /opt/iva/
+# install pyjenkins
+RUN pip install git+https://bitbucket.org/cocoon_bitbucket/pyjenkins.git
 
+ADD ./demo /tests/
+WORKDIR /tests
 
 
 CMD []
