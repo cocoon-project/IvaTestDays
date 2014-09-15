@@ -15,20 +15,27 @@ sudo docker run -ti  cocoon/ivatestdays /bin/sh
 use it
 
 
-phone test
+phone test with python
 
 ```
-python python_phones_calls.py
+cd /tests/python_phone
 
-python python_phone_ussd_123.py
+python calls.py
+
+python ussd_123.py
 ```
 
 
 robot framework tests
 
 ```
-cd /opt/iva/robotdemo
+cd /tests/robotdemo
 pybot keyword_driven.txt
+
+
+cd /tests
+rflauch -j /tests/robotdemo/jobs.yaml keyword_driven
+
 
 ```
 

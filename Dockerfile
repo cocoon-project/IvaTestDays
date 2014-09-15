@@ -8,6 +8,7 @@ ADD requirements.txt /opt/iva/
 RUN pip install -r /opt/iva/requirements.txt
 
 # install pyjenkins
+RUN pip install PyYAML
 RUN pip install git+https://bitbucket.org/cocoon_bitbucket/pyjenkins.git
 
 ADD ./demo /tests/
