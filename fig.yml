@@ -1,0 +1,10 @@
+ivatestdays:
+  build .
+  command: /bin/sh
+  volumes:
+    - ./jenkins:/jenkins
+    - ./demo/:/tests/
+jenkins:
+  image: cocoon/jenkins
+  links:
+   - ivatestdays

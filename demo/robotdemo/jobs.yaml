@@ -18,3 +18,9 @@ jenkins:
           - --exclude not_ready
           - --loglevel debug
           - --dryrun
+
+       data_driven:
+        name: data_driven.txt
+        description: "a driven data test"
+        parameters:
+          - --exclude not_ready
