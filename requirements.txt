@@ -12,6 +12,6 @@ robotframework-uiautomatorlibrary==0.1
 six==1.7.3
 suds==0.4
 uiautomator==0.1.32
-urllib3==1.9
+urllib3==1.26.5
 waitress==0.8.9
 wsgiref==0.1.2
