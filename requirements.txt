@@ -10,7 +10,7 @@ robotframework-httplibrary==0.4.2
 robotframework-sudslibrary==0.8
 robotframework-uiautomatorlibrary==0.1
 six==1.7.3
-suds==0.4
+suds==1.0.0
 uiautomator==0.1.32
 urllib3==1.9
 waitress==0.8.9
